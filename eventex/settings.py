@@ -1,3 +1,4 @@
+# coding: utf-8
 # Django settings for eventex project.
 import os 
 import dj_database_url

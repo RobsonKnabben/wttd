@@ -1,4 +1,4 @@
-# coding utf-8
+# coding: utf-8
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from eventex.subscriptions.forms import SubscriptionForm
