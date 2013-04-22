@@ -20,10 +20,11 @@ def create(request):
     form = SubscriptionForm(request.POST)
     if not form.is_valid():
         return render(request, 'subscriptions/subscription_detail.html', {'form': form})
+
     obj = form.save()
     return HttpResponseRedirect('/inscricao/%d/' % obj.pk)
 
 
 def detail(request, pk):
-    subscrition = get_object_or_404(Subscription, pk=pk)
-    return render(request, 'subscriptions/subscription_detail.html',{'subscription': subscrition})
+    subscription = get_object_or_404(Subscription, pk=pk)
+    return render(request, 'subscriptions/subscription_detail.html', {'subscription': subscription})
