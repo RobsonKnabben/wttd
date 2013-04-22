@@ -136,6 +136,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'eventex.core',
+    'eventex.subscriptions',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -149,7 +150,10 @@ LOGGING = {
     'filters': {
         'require_debug_false': {
             '()': 'django.utils.log.RequireDebugFalse'
-        }
+        },
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
     },
     'handlers': {
         'mail_admins': {
@@ -159,6 +163,7 @@ LOGGING = {
         },
         'console':{
             'level': 'DEBUG',
+            'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
         },
     },

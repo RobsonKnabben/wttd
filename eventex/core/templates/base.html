@@ -1,0 +1,25 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+        <title>EventeX</title>
+        <link type="text/css" href="{{ STATIC_URL }}css/style.css" rel="stylesheet" media="screen" /> 
+    </head>
+    <body>
+        <div id="page">
+            <div id="header">
+                <center>
+                    <img src="{{ STATIC_URL }}img/logo.png" alt="EventeX" />
+                </center>
+            </div>
+            <hr>
+                <div id="content">
+                   {% block content %}
+                   {% endblock content %}
+                </div>
+            </hr>
+            <div id="footer">
+                <p>&copy; 2012. <a rel="license" href="http://eventex.herike.com">EventeX</a>, some rights reserved. <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/br/80x15.png" /></a></p>
+            </div>
+        </div>
+    </body>
+</html>
