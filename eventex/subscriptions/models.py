@@ -11,9 +11,9 @@ class Subscription(models.Model):
     created_at = models.DateTimeField(_('criado em'), auto_now_add=True)
 
     class Meta:
-        ordering = ['created_at']
-        verbose_name = _('inscricao')
-        verbose_name_plural = _('inscricoes')
+        ordering = [u'created_at']
+        verbose_name = _(u'inscrição')
+        verbose_name_plural = _(u'inscrições')
 
     def __unicode__(self):
         return self.name
