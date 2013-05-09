@@ -7,9 +7,11 @@
     <body>
         <div id="page">
             <div id="header">
-                <center>
-                    <img src="{{ STATIC_URL }}img/logo.png" alt="EventeX" />
-                </center>
+                <div id="logo">
+                    <a href="{% url 'core:homepage' %}">
+                        <img src="{{ STATIC_URL }}img/logo.png" alt="EventeX" />
+                    </a>
+                </div>
             </div>
             <hr>
                 <div id="content">

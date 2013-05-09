@@ -9,7 +9,9 @@ SOUTH_TESTS_MIGRATE = False
 
 PROJECT_DIR = Path(__file__).parent
 
-DEBUG = os.environ.get('DEBUG') == 'True'
+# DEBUG = os.environ.get('DEBUG') == 'True'
+DEBUG = True
+
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (

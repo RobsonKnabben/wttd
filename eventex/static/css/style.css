@@ -128,15 +128,16 @@ Header
 */
  
 #header {
-  border-bottom: 1px dotted #CDB380;
+    border-bottom: 1px dotted #CDB380;
 }
  
 #header #logo {
-  margin: auto;
+  /*margin: auto;
   width: 300px;
   height: 215px;
   background: transparent url(../images/logo-small-acts.png) no-repeat 0 0;
   text-indent: -9999px;
+  */
 }
  
 #header #logo a {
