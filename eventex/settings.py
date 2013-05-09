@@ -4,13 +4,13 @@ import os
 import dj_database_url
 from unipath import Path
 
-SOUTH_TESTS_MIGRATE = False
+SOUTH_TESTS_MIGRATE = True
 
 
 PROJECT_DIR = Path(__file__).parent
 
-# DEBUG = os.environ.get('DEBUG') == 'True'
-DEBUG = True
+DEBUG = os.environ.get('DEBUG') == 'True'
+# DEBUG = True
 
 TEMPLATE_DEBUG = DEBUG
 
